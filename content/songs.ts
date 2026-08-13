@@ -24,6 +24,7 @@ export type Song = {
   archetype: "liv" | "megin" | "eira";
   virtue: string;
   mythSource: string;
+  mythImage?: string;
   excerpt: string;
   lyrics: string;
   reflection: string;
@@ -74,10 +75,72 @@ export const songs: Song[] = [
     album: "yggdrasil",
     archetype: "liv", // suggested — Idunn's apples, youth, renewal
     virtue: "Hope",
-    mythSource: "", // TODO
+    mythSource:
+      "Iðunn is the keeper of the apples that preserve the youth of the Norse gods. In the Prose Edda, the giant Þjazi, aided by Loki's deception, succeeds in luring Iðunn away from Asgard and carries her into the realm of the giants.\n\nWithout Iðunn and her apples, something once almost unimaginable begins to happen: the gods grow old. Their youth fades, and they realize that even the mighty Æsir depend upon the quiet gift guarded by one who carries neither sword nor shield.\n\nThe gods compel Loki to bring her home. Borrowing Freyja's falcon shape, he flies into the land of the giants, transforms Iðunn into a nut, and carries her back toward Asgard while Þjazi pursues them in eagle form. The gods prepare a fire at Asgard's walls; Loki crosses safely, but Þjazi is caught in the flames.\n\nIðunn returns—and with her, youth and renewal return to the gods.",
+    mythImage: "/images/songs/golden-apple-myth.jpg",
     excerpt: "", // TODO
-    lyrics: "", // TODO
-    reflection: "", // TODO
+    lyrics: `In halls of gold where the high gods stood
+Beneath the ash of the world-tree wood
+She walked in light with the fruit of dawn
+While winter slept beyond the lawn
+Silver bowls in her gentle hands
+Life itself in the sacred lands
+No blade she bore No shield of war
+Yet all the gods were hers… and more
+
+Golden daughter… keeper of flame
+Whispered softly… the secret name
+From branch to root
+From stone to sky
+She held the years… that never die
+
+Iðunn… Iðunn…
+Bearer of the golden fire
+Keeper of the endless spring
+Voice of youth the gods require
+Iðunn… Iðunn…
+When your light was torn away
+Even kings of Asgard wept
+As time began… to claim its prey
+
+Loki walked where the frost winds bite
+Under feathers in moonless night
+The giant watched with eagle eyes
+And whispered lies beneath the skies
+Through silent woods she stepped alone
+Far from the halls she'd always known
+And shadows closed
+On golden hair
+As winter claimed the northern air
+
+Hei-ya… Hei-ya… Blood of root… breath of stone…
+Hei-ya… Hei-ya… Bring the golden daughter home…
+Hei-ya… Hei-ya… Ash grows old… steel grows weak…
+Hei-ya… Hei-ya…
+Without her fruit… the gods can't speak…
+
+Wrinkles formed on immortal skin
+Fire grew cold in the hearts within
+The mighty bowed
+The proud turned gray
+As centuries came in a single day
+
+Iðunn… Iðunn…
+Rise again through falcon skies
+Bring the spring to dying gods
+Bring the fire to ancient eyes
+Iðunn… Iðunn…
+Golden fruit and sacred flame
+Even gods can turn to dust…
+Without the keeper of their name
+
+(Final Outro: whispered choir)
+Golden daughter…
+Golden flame…
+Without your light…
+None remain…`,
+    reflection:
+      "Golden Apple is a song about the quiet things upon which even great strength depends.\n\nIðunn is not remembered as a conqueror. She carries no legendary weapon and commands no army. Yet when she disappears, warriors, kings, and gods discover that their strength cannot sustain itself. What seemed gentle proves indispensable.\n\nHer story becomes a reflection on renewal, beauty, and the sources of life we often notice only when they are gone. Strength may defend what matters, but something must also restore it. Courage can carry us through winter; it cannot make winter into spring.\n\nFor Liv, Iðunn represents Beauty in its deeper sense—not beauty as appearance, but as a life-giving force: the presence that awakens, restores, and reminds us what is worth preserving.\n\nEven the strongest among us must be renewed.",
     artwork: "/images/songs/golden-apple.jpg", // TODO
     audioPreview: "/audio/golden-apple.mp3", // PHASE 2 → golden-apple-preview.mp3
   },
