@@ -322,8 +322,18 @@ export function SongPageClient({ slug }: { slug: string }) {
     <main className="bg-ivory text-charcoal min-h-screen">
       <Header />
       <div className="pt-[60px]">
+        {/* ── Back to Songs ────────────────────────────────────────────── */}
+        <div className="w-full max-w-2xl mx-auto px-6 pt-6">
+          <Link
+            href="/songs"
+            className="inline-flex items-center gap-1 font-sans text-[11px] tracking-[0.12em] uppercase text-warm-gray hover:text-champagne-deep transition-colors duration-300"
+          >
+            &larr; Back to Songs
+          </Link>
+        </div>
+
         {/* ── Song hero ──────────────────────────────────────────────── */}
-        <section className="w-full max-w-2xl mx-auto px-6 pt-16 md:pt-24 text-center">
+        <section className="w-full max-w-2xl mx-auto px-6 pt-10 md:pt-16 text-center">
           <p className="font-sans text-[10px] tracking-[0.2em] uppercase text-silver">
             Track {String(song.trackNumber).padStart(2, "0")}
           </p>
@@ -414,11 +424,17 @@ export function SongPageClient({ slug }: { slug: string }) {
               )}
             </div>
 
-            {/* Album link */}
-            <div className="w-1/3 text-center">
+            {/* Songs + Album links */}
+            <div className="w-1/3 flex items-center justify-center gap-2">
+              <Link
+                href="/songs"
+                className="font-sans text-[10px] tracking-[0.15em] uppercase border border-champagne-deep/40 text-champagne-deep rounded-full px-4 py-1.5 hover:bg-champagne-deep/10 transition-colors duration-300"
+              >
+                Songs
+              </Link>
               <Link
                 href="/album"
-                className="font-sans text-[10px] tracking-[0.15em] uppercase border border-champagne-deep/40 text-champagne-deep rounded-full px-5 py-1.5 hover:bg-champagne-deep/10 transition-colors duration-300"
+                className="font-sans text-[10px] tracking-[0.15em] uppercase border border-champagne-deep/40 text-champagne-deep rounded-full px-4 py-1.5 hover:bg-champagne-deep/10 transition-colors duration-300"
               >
                 Album
               </Link>
