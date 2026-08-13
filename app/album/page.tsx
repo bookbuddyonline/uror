@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, useCallback } from "react";
 import Link from "next/link";
 import { Header } from "@/components/navigation/Header";
 import { primaryAlbum } from "@/content/album";
@@ -239,6 +239,35 @@ function TrackListing() {
     .map((slug) => songs.find((s) => s.slug === slug))
     .filter(Boolean) as (typeof songs)[number][];
 
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const [playingSlug, setPlayingSlug] = useState<string | null>(null);
+
+  const toggle = useCallback(
+    (slug: string, src: string) => {
+      const audio = audioRef.current;
+      if (!audio) return;
+
+      if (playingSlug === slug) {
+        audio.pause();
+        setPlayingSlug(null);
+        return;
+      }
+
+      audio.src = src;
+      audio.play();
+      setPlayingSlug(slug);
+    },
+    [playingSlug],
+  );
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    const onEnded = () => setPlayingSlug(null);
+    audio.addEventListener("ended", onEnded);
+    return () => audio.removeEventListener("ended", onEnded);
+  }, []);
+
   return (
     <section className="w-full max-w-3xl mx-auto px-6 pb-16 md:pb-24">
       <h2 className="font-serif text-2xl md:text-3xl tracking-[0.15em] text-champagne-deep text-center">
@@ -253,32 +282,59 @@ function TrackListing() {
 
       <ol className="space-y-0">
         {albumSongs.map((song) => {
-          const archetype = getArchetype(song.archetype);
+          const isPlaying = playingSlug === song.slug;
           return (
-            <li key={song.slug}>
+            <li
+              key={song.slug}
+              className={`flex items-center gap-4 py-3.5 border-b border-stone/50 px-2 -mx-2 rounded-sm transition-colors duration-300 ${
+                isPlaying ? "bg-pearl/50" : ""
+              }`}
+            >
+              {/* Track number */}
+              <span className="font-sans text-xs tracking-wider text-silver w-6 text-right shrink-0">
+                {String(song.trackNumber).padStart(2, "0")}
+              </span>
+
+              {/* Play / pause button */}
+              <button
+                onClick={() => toggle(song.slug, song.audioPreview)}
+                className="shrink-0 w-7 h-7 rounded-full border border-champagne/30 flex items-center justify-center text-champagne-deep hover:bg-champagne/10 transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-champagne"
+                aria-label={isPlaying ? `Pause ${song.title}` : `Play ${song.title}`}
+              >
+                {isPlaying ? (
+                  <svg width="9" height="9" viewBox="0 0 14 14" fill="currentColor">
+                    <rect x="2" y="1" width="3.5" height="12" rx="1" />
+                    <rect x="8.5" y="1" width="3.5" height="12" rx="1" />
+                  </svg>
+                ) : (
+                  <svg width="9" height="9" viewBox="0 0 14 14" fill="currentColor">
+                    <polygon points="3,1 13,7 3,13" />
+                  </svg>
+                )}
+              </button>
+
+              {/* Title */}
+              <span
+                className={`font-serif text-base md:text-lg flex-1 transition-colors duration-300 ${
+                  isPlaying ? "text-champagne-deep" : "text-charcoal"
+                }`}
+              >
+                {song.title}
+              </span>
+
+              {/* The Story link */}
               <Link
                 href={`/songs/${song.slug}`}
-                className="group flex items-baseline gap-4 py-3.5 border-b border-stone/50 hover:bg-pearl/40 transition-colors duration-300 px-2 -mx-2 rounded-sm"
+                className="shrink-0 font-sans text-[10px] tracking-[0.15em] uppercase text-champagne-deep hover:text-champagne transition-colors duration-300"
               >
-                {/* Track number */}
-                <span className="font-sans text-xs tracking-wider text-silver w-6 text-right shrink-0">
-                  {String(song.trackNumber).padStart(2, "0")}
-                </span>
-
-                {/* Title */}
-                <span className="font-serif text-base md:text-lg text-charcoal group-hover:text-champagne-deep transition-colors duration-300 flex-1">
-                  {song.title}
-                </span>
-
-                {/* Archetype badge */}
-                <span className="font-sans text-[10px] tracking-[0.15em] uppercase text-warm-gray shrink-0">
-                  {archetype.name}
-                </span>
+                The Story
               </Link>
             </li>
           );
         })}
       </ol>
+
+      <audio ref={audioRef} preload="none" />
     </section>
   );
 }
