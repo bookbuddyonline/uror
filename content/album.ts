@@ -3,6 +3,12 @@
 // Albums are modeled as a list so a second album can be added later with zero
 // refactoring. For now only Yggdrasil is present and is the site's focus.
 
+export type AlbumConcept = {
+  heading: string;
+  paragraphs: string[];
+  closing: string;
+};
+
 export type Album = {
   slug: string;
   title: string; // "Yggdrasil"
@@ -14,6 +20,7 @@ export type Album = {
   cover: string; // square album artwork
   coverAnimation?: string; // one-time reveal video — plays once, holds final frame
   description: string;
+  concept?: AlbumConcept;
   trackSlugs: string[]; // in album order
 };
 
@@ -29,6 +36,15 @@ export const albums: Album[] = [
     cover: "/images/album/yggdrasil-cover.jpg", // TODO: square album art
     coverAnimation: "/video/yggdrasil-reveal.mp4", // TODO: web-optimized one-time reveal
     description: "", // TODO
+    concept: {
+      heading: "Where the Old Stories Still Live",
+      paragraphs: [
+        "Yggdrasil: Songs of the North journeys into the myths, voices, and ancient stories of the Norse world as reflections of the human spirit that endure across the ages.",
+        "Through the voices of Liv, Megin, and Eira, the album explores three enduring ideals: Beauty, Strength, and Wisdom. From sacrifice and longing to fate, courage, memory, and renewal, each song draws from Norse mythology and tradition to uncover something timeless within the story.",
+      ],
+      closing:
+        "Ancient tales. Modern voices. The Beauty, Strength and Wisdom beneath the branches of the World Tree.",
+    },
     trackSlugs: [
       "roots-of-yggdrasil",
       "baldrs-mistletoe",
