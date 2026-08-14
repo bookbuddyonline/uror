@@ -47,10 +47,57 @@ export const songs: Song[] = [
     album: "yggdrasil",
     archetype: "eira", // suggested — the World Tree, memory, depth
     virtue: "Understanding",
-    mythSource: "", // TODO
+    mythSource:
+      "At the center of the Norse cosmos stands Yggdrasil, the immense ash whose branches extend across the heavens and whose roots bind together the worlds of gods, giants, humanity, and the dead. More than a tree, Yggdrasil is the living structure of the cosmos\u2014a place where creation, fate, wisdom, decay, and renewal meet.\n\nIn the Prose Edda, three great roots extend from Yggdrasil, each reaching toward a different realm and source of water. Beneath one lies Ur\u00F0arbrunnr, the Well of Ur\u00F0r, where the Norns\u2014Ur\u00F0r, Ver\u00F0andi, and Skuld\u2014shape the fates of gods and humankind and tend the tree with water and sacred clay.\n\nAnother reaches toward M\u00EDmir\u2019s well, a source of wisdom and understanding. Odin desired its knowledge so deeply that he surrendered one of his eyes for a drink from its waters\u2014a sacrifice that made wisdom something purchased, rather than freely given.\n\nThe third root reaches toward the primordial cold of Niflheim and Hvergelmir, where the serpent-dragon N\u00ED\u00F0h\u00F6ggr gnaws at Yggdrasil from below. Other creatures inhabit the tree as well, while an eagle watches from its highest branches.\n\nYggdrasil therefore exists under constant strain. It is nourished and wounded, flourishing and decaying at once. Even at Ragnar\u00F6k, when the established order of the gods collapses, the World Tree remains bound to the mystery of survival and renewal.",
+    mythImage: "/images/songs/roots-of-yggdrasil-myth.jpg",
     excerpt: "", // TODO
-    lyrics: "", // TODO
-    reflection: "", // TODO
+    lyrics: `Before the stars were carved in frost
+Before the fire\u2026 before the lost
+One ash arose from silent stone
+And held the worlds\u2026 as one\u2026 alone\u2026
+Its branches touched the northern light
+Its roots drank deep from endless night
+And every realm\u2026 from death to sky\u2026
+Was born beneath\u2026 its watching eye\u2026
+
+Root below\u2026 branch above\u2026
+Stone of fate\u2026 blood of love\u2026
+Water deep\u2026 secrets grow\u2026
+Only ancient mothers know\u2026
+
+Yggdrasil\u2026 Yggdrasil\u2026
+Mother of the nine-fold flame
+Through frost and fire\u2026 through life and death\u2026
+The worlds all speak your name
+Yggdrasil\u2026 Yggdrasil\u2026
+Root of all that lives and dies
+Drink from fate\u2026 drink from wisdom\u2026
+Drink where ancient darkness lies
+
+At one root\u2026 the sisters weave
+What kings will hold\u2026 what kings will leave
+At one root\u2026 the one-eyed came
+And paid in blood\u2026 to learn the name
+At one root\u2026 in frozen stone
+The dragon feeds\u2026 below\u2026 alone\u2026
+Yet still she stands\u2026 through tooth and flame\u2026
+Unbroken\u2026 still the same\u2026
+
+Hei-ya\u2026 Hei-ya\u2026
+Past and future\u2026 root and bone\u2026
+Hei-ya\u2026 Hei-ya\u2026
+Nine worlds carved\u2026 in ash and stone\u2026
+Hei-ya\u2026 Hei-ya\u2026
+Water deep\u2026 the old wells call\u2026
+Hei-ya\u2026 Hei-ya\u2026
+One tree holds\u2026 the fate of all\u2026
+
+Yggdrasil\u2026 Yggdrasil\u2026
+When stars grow dark and kingdoms fall
+Through Ragnar\u00F6k\u2026 through ash and flame\u2026
+Your roots remember all\u2026.`,
+    reflection:
+      "Roots of Yggdrasil sees the World Tree as more than the architecture of the Norse cosmos. It becomes an image of existence itself.\n\nIts roots reach simultaneously toward fate, wisdom, and darkness. At one, the Norns weave what will become. At another, knowledge demands sacrifice. At another, destruction never stops gnawing.\n\nAnd still the tree grows.\n\nThat contradiction lies at the heart of the song. Life is not sustained because darkness, loss, or uncertainty have been defeated. Yggdrasil endures while carrying all of them. Its strength comes not from escaping the forces that threaten it, but from remaining rooted while those forces act upon it.\n\nThe three wells also echo the three voices of UROR. Beauty gives life something worth preserving. Strength allows it to endure. Wisdom allows it to understand. None exists entirely alone, just as no single root sustains the World Tree.\n\nPast and future, birth and death, knowledge and mystery all meet beneath its branches.\n\nKingdoms fall. The roots remember.",
     artwork: "/images/songs/roots-of-yggdrasil.jpg", // TODO
     audioPreview: "/audio/roots-of-yggdrasil.mp3", // PHASE 2 → roots-of-yggdrasil-preview.mp3
   },
