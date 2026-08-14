@@ -39,5 +39,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-# Audio files — unreleased masters must NEVER be pushed
-/public/audio/
+# Audio files — Phase 1: full songs committed for family/friends launch (private repo)
+# Phase 2: swap to preview clips and re-enable this exclusion
