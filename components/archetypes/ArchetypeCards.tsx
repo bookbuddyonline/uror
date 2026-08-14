@@ -43,7 +43,7 @@ export function ArchetypeCards() {
       {archetypes.map((a) => (
         <Link
           key={a.slug}
-          href={`/${a.slug}`}
+          href="/voices"
           className="group relative flex flex-col items-center text-center px-6 py-5 md:px-4 md:py-4"
         >
           {/* Ivory radial glow halo behind text */}
