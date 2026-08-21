@@ -108,10 +108,87 @@ Your roots remember all\u2026.`,
     album: "yggdrasil",
     archetype: "liv", // suggested — coin-flip with eira (fate/doom)
     virtue: "Longing",
-    mythSource: "", // TODO
+    mythSource:
+      "Baldr, the radiant son of Odin and Frigg, was among the most beloved of the Æsir. His presence was associated with beauty, goodness, and light, and the gods believed few things in all the worlds could compare with him.\n\nBut Baldr began to dream of his own death.\n\nTroubled by the omen, Frigg vowed to protect her son. She traveled through the worlds seeking promises from the things of creation—fire and water, stone and metal, beasts and birds, sickness, weapons, trees and roots—asking each that it would never bring harm to Baldr.\n\nAll gave their oath. Or so it seemed.\n\nWhen the gods discovered that Baldr could no longer be harmed, they made a game of his invulnerability. They gathered in Asgard, laughing as stones, blades, and spear shafts were thrown against him, only to break, turn aside, or fall harmlessly away.\n\nBut Frigg had overlooked one small thing: mistletoe. It seemed too young, too fragile, too insignificant to threaten the shining son of Asgard.\n\nLoki discovered what the others did not know. From the mistletoe he fashioned a weapon and brought it to Baldr\u2019s blind brother, Höðr, who stood apart because he could neither see Baldr nor join the gods in their game. Loki placed the weapon in Höðr\u2019s hand and guided his aim.\n\nThe mistletoe flew. Baldr fell.\n\nAnd with him fell something brighter than any of them knew they could lose. The laughter of Asgard became grief, and an event had been set in motion that even the gods could not undo.\n\nBaldr was carried to his great ship, Hringhorni, and laid upon the funeral pyre. His wife Nanna was placed beside him, and the gods watched as the ship burned beneath the northern sky.\n\nYet the old story leaves one final promise. When Ragnarök has passed and the old world has fallen, Baldr will return from Hel. He will walk again beneath a renewed sky—a reminder that even after the deepest loss, light may return to the world.",
+    mythImage: "/images/songs/baldrs-mistletoe-myth.jpg",
     excerpt: "", // TODO
-    lyrics: "", // TODO
-    reflection: "", // TODO
+    lyrics: `Before the frost had touched the stone
+Before the ravens flew alone
+A golden son walked halls of fire
+Beloved of gods\u2026 their heart\u2019s desire
+
+No blade could cut
+No flame could scar
+No shadow reach
+His shining star
+
+The roots of worlds\u2026 grew still\u2026 and listened\u2026
+When Baldr dreamed\u2026 of death\u2026
+
+Mother of wisdom\u2026 mother of sky\u2026
+How do you save\u2026 what must still die\u2026
+Frigg walked where the old oaths sleep
+And made the stones\u2026 and rivers weep
+
+Baldr\u2026 Baldr\u2026
+Light of the northern flame
+Why do the stars grow cold tonight
+And whisper out your name
+
+Baldr\u2026 Baldr\u2026
+Golden son of dawn
+When the light fell from Asgard\u2026
+The age of peace was gone\u2026
+
+In circles wide the gods all laughed
+As iron broke\u2026 and spear shafts snapped
+The mighty cheered\u2026 the halls rang bright
+For none could touch the child of light
+
+But in the crowd\u2026 one shadow smiled\u2026
+One tongue of ash\u2026 one winter child\u2026
+Loki walked in borrowed skin
+And fed the dark\u2026 from deep within
+
+Hei-ya\u2026 Hei-ya\u2026
+Root and branch\u2026 stone and bone\u2026
+
+Hei-ya\u2026 Hei-ya\u2026
+Light must walk\u2026 the path alone\u2026
+
+Hei-ya\u2026 Hei-ya\u2026
+Mistle grows\u2026 where no one sees\u2026
+
+Hei-ya\u2026 Hei-ya\u2026
+Death can hide\u2026 in smallest leaves\u2026
+
+Blind was the hand\u2026
+But not the lie\u2026
+Höðr stood\u2026 beneath the sky\u2026
+
+One sacred branch\u2026
+One whispered aim\u2026
+
+And all the worlds\u2026
+Were not the same\u2026
+
+Baldr\u2026 Baldr\u2026
+The funeral fires rise
+Across the seas of Asgard\u2019s grief
+Beneath the northern skies
+
+Baldr\u2026 Baldr\u2026
+Though Hel may keep your flame
+When Ragnarök breaks open night\u2026
+The light shall rise again\u2026
+
+The ship burns on\u2026
+The mother cries\u2026
+
+And even gods\u2026
+Must say goodbye\u2026`,
+    reflection:
+      "Baldr\u2019s Mistletoe is a song about the fragility hidden within what appears invulnerable.\n\nFrigg tries to remove every danger from her son\u2019s path. Iron cannot harm him. Fire cannot consume him. Stone cannot break him. The gods become so certain of Baldr\u2019s safety that his invulnerability becomes entertainment.\n\nAnd yet the thing that changes their world is not a sword, a giant, or an army. It is a small branch no one believed important enough to fear.\n\nThere is something deeply human within that idea. We often prepare ourselves for the dangers we can see while overlooking what appears insignificant. Strength, security, love, and even peace can begin to feel permanent—until something unexpected reminds us that they never truly were.\n\nBut Baldr\u2019s story is not solely about death. His promised return after Ragnarök transforms the myth into one of loss, renewal, and hope. The light disappears from Asgard, but it is not extinguished forever.\n\nWithin UROR, Baldr\u2019s story belongs most naturally to Liv and the ideal of Beauty. Not beauty as appearance, but beauty as the presence of something good in the world—something capable of giving warmth, hope, and meaning simply because it exists. The grief of the gods is powerful precisely because they understand the value of that light only when it is gone.\n\nYet all three voices are present within the story. Beauty gives us something worth mourning when it is lost. Strength gives us the courage to endure the loss. Wisdom teaches us that nothing we love is made precious by being permanent.\n\nTogether, they lead toward the final promise within Baldr\u2019s myth: that loss and hope can occupy the same story. What was beautiful can be taken from us, grief can be real, and still the possibility of renewal remains.\n\nFor UROR, that is why Baldr\u2019s death is not a song about darkness. It is a song about the value of light.\n\nEven gods must say goodbye. Yet the light may still return.",
     artwork: "/images/songs/baldrs-mistletoe.jpg", // TODO
     audioPreview: "/audio/baldrs-mistletoe.mp3", // PHASE 2 → baldrs-mistletoe-preview.mp3
   },
