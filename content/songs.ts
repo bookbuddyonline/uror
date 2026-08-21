@@ -273,12 +273,70 @@ None remain…`,
     slug: "orlog-weaving",
     trackNumber: 4,
     album: "yggdrasil",
-    archetype: "eira", // suggested — ørlög, fate woven by the Norns
+    archetype: "megin", // strength-driven song — fate met with defiance
     virtue: "Fate",
-    mythSource: "", // TODO
+    mythSource:
+      "Beneath the great ash Yggdrasil lies Urðarbrunnr—the Well of Urðr, one of the sacred wells that nourish the World Tree. Here dwell three mysterious women: Urðr, Verðandi, and Skuld. They are the Norns.\n\nIn Norse tradition, the Norns are intimately connected with fate. They determine the lives and destinies of human beings, and even the gods exist within a cosmos shaped by forces of fate that cannot simply be commanded away.\n\nThe three are often understood poetically as representing what has been, what is becoming, and what is yet to come. Their names evoke time unfolding—not as three separate worlds, but as one continuous thread.\n\nEach day, the Norns draw water from the Well of Urðr and tend Yggdrasil, preserving the tree upon which the worlds themselves depend.\n\nLater tradition has often imagined them spinning or weaving the threads of fate. The image is powerful: every choice, inheritance, consequence, and event becomes another strand within a pattern far larger than any one life.\n\nThis is where the idea of örlög becomes important. Örlög is often translated simply as fate, but its meaning reaches deeper. It suggests something laid down through what has already come before—the accumulated conditions from which the present emerges and upon which the future must be built.\n\nA king may command armies. A warrior may change the course of a battle. Even Odin may seek knowledge of what is coming. But none stands entirely outside the pattern.\n\nThe thread continues. And beneath Yggdrasil, the Norns remain.",
+    mythImage: "/images/songs/orlog-weaving-myth.jpg",
     excerpt: "", // TODO
-    lyrics: "", // TODO
-    reflection: "", // TODO
+    lyrics: `Urðr\u2026 Verðandi\u2026 Skuld\u2026
+Urðr\u2026 Verðandi\u2026 Skuld\u2026
+
+Under Yggdrasil where the cold roots drink,
+three women sit at the water\u2019s brink.
+One holds the was, one holds the now,
+one holds the blade that is yet to fall.
+
+We do not weep, we do not pray,
+we cut the thread of kings away.
+
+Örlög! — fate is spoken!
+Heyr oss! — hear us call!
+Spun in blood, in iron, in frost —
+Örlög!
+Heyr oss!
+What we weave shall never be lost.
+Urðr, Verðandi, Skuld!
+
+The raven knows our names by heart,
+the wolf will come and the world will part.
+We sang the spear into Óðinn\u2019s hand,
+we\u2019ll sing the fire that ends the land.
+
+No god so high, no hall so grand,
+that does not bow to the spinning strand.
+
+Örlög! — fate is spoken!
+Heyr oss! — hear us call!
+Spun in blood, in iron, in frost —
+Örlög!
+Heyr oss!
+What we weave shall never be lost.
+Urðr, Verðandi, Skuld!
+
+Vindr ok eldr, haf ok bein,
+(wind and fire, sea and bone)
+snúum þráðinn, einn ok einn.
+(we turn the thread, one by one)
+Heyr! Heyr! Heyr!
+
+The thread will not break,
+the thread will not bend —
+we are the beginning,
+we are the end.
+
+Örlög! — fate is spoken!
+Heyr oss! — hear us call!
+Spun in blood, in iron, in frost —
+Örlög!
+Heyr oss!
+What we weave shall never be lost.
+Urðr, Verðandi, Skuld!
+
+Urðr\u2026 Verðandi\u2026 Skuld\u2026
+Örlög.`,
+    reflection:
+      "Ørlög (The Weaving) asks an unsettling question: How much of the life before us was already being shaped long before we arrived?\n\nWe inherit a world already in motion—families, histories, choices, consequences, victories, wounds, and obligations passed forward from those who came before us. We do not choose the first threads placed into our hands. But we still must decide what to do with them.\n\nThat tension is where Megin and Eira meet within this song. Eira hears the Norns and asks what the pattern means. She sees memory, consequence, time, and the wisdom required to understand that no moment exists entirely by itself.\n\nMegin hears something different. She hears the drum. For Megin, accepting that some things lie beyond our control is not surrender. It is a form of strength. We may not choose every thread woven into our lives, but we choose how we stand within the pattern.\n\nThe song therefore treats fate not with fear, but with defiance tempered by understanding. Wisdom recognizes the pattern. Strength determines how we meet it.\n\nAnd somewhere between them lies the human freedom to decide what kind of person we will become within circumstances we did not entirely choose.\n\nThat is why the Norns belong so naturally within the world of UROR. Three women sit beneath the World Tree, each distinct, yet each part of something that can exist only through all three. Past. Becoming. What may come. Like Beauty, Strength, and Wisdom, none tells the whole story alone.\n\nWe do not choose every thread. We choose how we carry what has been woven.",
     artwork: "/images/songs/orlog-weaving.jpg", // TODO
     audioPreview: "/audio/orlog-weaving.mp3", // PHASE 2 → orlog-weaving-preview.mp3
   },
